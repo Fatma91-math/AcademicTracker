@@ -1,9 +1,5 @@
-from modules.scholar import ScholarScraper
-from modules.storage import Storage
+from modules.tracker import AcademicTracker
 
-scholar = ScholarScraper()
-storage = Storage()
+tracker = AcademicTracker()
 
-profile = scholar.get_profile()
-
-storage.save_json(profile)
+tracker.run()
